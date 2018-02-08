@@ -1,0 +1,19 @@
+Package: NatureSounds
+Type: Package
+Title: Animal sounds for bioacustic analysis
+Version: 1.0.0
+Date: 2018-08-28
+Author: Marcelo Araya-Salas
+Maintainer: Marcelo Araya-Salas <araya-salas@cornell.edu>
+Description: Collection of example animal sounds for bioacoustic analysis.
+License: GPL (>= 2)
+Imports: 
+Depends: R (>= 3.2.1)
+LazyData: TRUE
+URL: https://github.com/maRce10/AnimalSounds 
+BugReports: https://github.com/maRce10/AnimalSounds/issues
+NeedsCompilation: no
+Suggests: 
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Repository: CRAN
