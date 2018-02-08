@@ -31,4 +31,4 @@ library(NatureSounds)
 
 Please cite [NatureSounds](https://cran.r-project.org/package=NatureSounds) as follows:
 
-Araya-Salas, M. (2018), *NatureSounds: a collection of animal sound for bioacoustic analysis in the R environment*. R package version 1.1.0.# NatureSounds
+Araya-Salas, M. (2018), *NatureSounds: a collection of animal sound for bioacoustic analysis in the R environment*. R package version 1.1.0.
