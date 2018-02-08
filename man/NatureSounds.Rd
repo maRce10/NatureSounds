@@ -4,12 +4,14 @@
 \name{NatureSounds}
 \alias{NatureSounds}
 \alias{NatureSounds-package}
-\title{AnimalSounds: Animal sounds for bioacustic analysis}
+\title{AnimalSounds: Animal Sounds for Bioacustic Analysis}
 \description{
 NatureSounds is a package containing a collection of example animal sounds for bioacoustic analysis.
-The main goal is to provide example recordings of animal sounds to faciliate the development of bioacoustic 
-tools in the R environment. When possible selection tables with the time/frequency coordinates of the sounds 
-in the example recordings will also be included.
+The main goal is to provide example recordings to faciliate the development of bioacoustic 
+tools in the R environment. When possible, selection tables with the time/frequency coordinates of the sounds 
+in the example recordings will also be included. Note that this package does 
+not contain any function. Check out the packages 'warbleR', 'tuneR' and 'seewave' 
+for sound file manipulation and analysis in R.
 }
 \details{
 License: GPL (>= 2)
