@@ -16,3 +16,4 @@ NeedsCompilation: no
 Suggests: 
 RoxygenNote: 6.0.1
 Repository: CRAN
+Authors@R: person("Marcelo", "Araya-Salas", role = c("aut", "cre"), email = "araya-salas@cornell.edu")
