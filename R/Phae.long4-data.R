@@ -1,4 +1,4 @@
-#' Audio recording #1 of \emph{Phaethornis longirostris}
+#' Audio recording #4 of \emph{Phaethornis longirostris}
 #' 
 #' Audio recording #4 of \emph{Phaethornis longirostris} (Long-billed Hermit).
 #' 
