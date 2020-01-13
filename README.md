@@ -25,9 +25,6 @@ library(NatureSounds)
 To install the latest developmental version from [github](http://github.com/) you will need the R package [devtools](https://cran.r-project.org/package=devtools):
 
 ```r
-# From CRAN would be
-#install.packages("NatureSounds")
-
 # From github
 devtools::install_github("maRce10/NatureSounds")
 
