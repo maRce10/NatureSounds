@@ -15,7 +15,7 @@ Install/load the package from CRAN as follows:
 ```r
 
 # From CRAN would be
-#install.packages("NatureSounds")
+install.packages("NatureSounds")
 
 #load package
 library(NatureSounds)
