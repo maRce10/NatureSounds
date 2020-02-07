@@ -1,10 +1,8 @@
 # NatureSounds
 
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/NatureSounds)](https://cran.r-project.org/package=NatureSounds)
-[![CRAN RStudio mirror
-downloads](http://cranlogs.r-pkg.org/badges/NatureSounds)](http://www.r-pkg.org/pkg/NatureSounds)
-[![Total
-Downloads](http://cranlogs.r-pkg.org/badges/grand-total/NatureSounds)](http://www.r-pkg.org/badges/grand-total/NatureSounds)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/NatureSounds)](https://cran.r-project.org/package=NatureSounds)
+[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/NatureSounds)](http://www.r-pkg.org/pkg/NatureSounds)
+[![Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/NatureSounds)](https://www.r-pkg.org/badges/grand-total/NatureSounds)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 `NatureSounds` is a package containing a collection of example animal sounds for bioacoustic analysis. The main goal is to provide example recordings of animal sounds to faciliate the development of bioacoustic tools in the R environment. When possible, selection tables with the time/frequency coordinates of the sounds in the example recordings will also be included.
