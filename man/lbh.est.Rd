@@ -14,4 +14,7 @@ data(lbh.est)
 \details{
 Extended selection table of \emph{Phaethornis longirostris} (Long-billed Hermit) songs.
 }
+\references{
+Araya-Salas M, G Smith-vidaurre,  D Mennill, P Gonzalez-Gomez, J Cahill & T Wright. 2019. Social group signatures in hummingbird displays provide evidence of co-occurrence of vocal and visual learning. Proceedings of the Royal Society B. 286: 20190666
+}
 \keyword{datasets}
