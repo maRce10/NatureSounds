@@ -8,12 +8,13 @@ Maintainer: Marcelo Araya-Salas <marceloa27@gmail.com>
 Description: Collection of example animal sounds for bioacoustic analysis.
 License: GPL (>= 2)
 Imports: 
-Depends: R (>= 3.2.1)
+Depends: R (>= 3.2.1), knitr
 LazyData: TRUE
 URL: https://github.com/maRce10/NatureSounds 
 BugReports: https://github.com/maRce10/NatureSounds/issues
 NeedsCompilation: no
 Suggests: tuneR
+VignetteBuilder: knitr
 RoxygenNote: 7.0.0
 Repository: CRAN
 Authors@R: person("Marcelo", "Araya-Salas", role = c("aut", "cre"), email = "marceloa27@gmail.com")
