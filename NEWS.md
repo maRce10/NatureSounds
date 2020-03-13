@@ -1,3 +1,7 @@
+# *NatureSound 1.0.3*
+
+* Vignette typos fixed.
+
 # *NatureSound 1.0.2*
 
 * Vignette describing data sets was added.
