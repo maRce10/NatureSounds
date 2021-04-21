@@ -1,6 +1,6 @@
 ---
 title: <center><font size="7"><b>Acoustic data sets in <i>NatureSounds</i></b></font></center>
-pagetitle: Animal acoustic data in NatureSounds
+pagetitle: Acoustic data sets in NatureSounds
 author: 
 - <center><a href="http://marceloarayasalas.weebly.com/">Marcelo Araya-Salas, PhD</a>
 date:  <center>"`r Sys.Date()`"</center>
@@ -13,9 +13,10 @@ output:
       collapsed: false
       smooth_scroll: true
 vignette: >
-  \usepackage[utf8]{inputenc}
-  %\VignetteIndexEntry{Acoustic data sets in NatureSounds}
-  %\VignetteEngine{knitr::rmarkdown}
+   %\VignetteIndexEntry{Acoustic data sets in NatureSounds}
+   %\usepackage[utf8]{inputenc}
+   %\VignetteEncoding{UTF-8}
+   %\VignetteEngine{knitr::rmarkdown}
 editor_options: 
   chunk_output_type: console
 ---

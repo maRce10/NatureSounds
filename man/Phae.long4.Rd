@@ -4,11 +4,13 @@
 \name{Phae.long4}
 \alias{Phae.long4}
 \title{Audio recording #4 of \emph{Phaethornis longirostris}}
-\format{One .wav file: \describe{
+\format{
+One .wav file: \describe{
   
   \item{Phae.long4}{\emph{Phaethornis longirostris} #4 recording}
   
-  }}
+  }
+}
 \source{
 \url{http://www.xeno-canto.org/contributor/EMCWQLLKEW}
 }

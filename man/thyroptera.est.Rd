@@ -4,7 +4,9 @@
 \name{thyroptera.est}
 \alias{thyroptera.est}
 \title{Extended selection table of Spix's disc-winged bat social calls}
-\format{One object of class extended selection table (following warbleR package format) and data frame.}
+\format{
+One object of class extended selection table (following warbleR package format) and data frame.
+}
 \source{
 Data used in Araya-Salas et al (2020)
 }

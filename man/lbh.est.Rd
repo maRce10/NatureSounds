@@ -4,7 +4,9 @@
 \name{lbh.est}
 \alias{lbh.est}
 \title{Extended selection table of \emph{Phaethornis longirostris} songs}
-\format{One object of class extended selection table (following warbleR package format) and data frame.}
+\format{
+One object of class extended selection table (following warbleR package format) and data frame.
+}
 \usage{
 data(lbh.est)
 }

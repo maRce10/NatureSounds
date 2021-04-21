@@ -4,7 +4,9 @@
 \name{monk.parakeet.est}
 \alias{monk.parakeet.est}
 \title{Extended selection table of monk parakeet contact calls}
-\format{One object of class extended selection table (following warbleR package format) and data frame.}
+\format{
+One object of class extended selection table (following warbleR package format) and data frame.
+}
 \source{
 Data used in Smith-Vidaurre, Araya-Salas & Wright (2019)
 }

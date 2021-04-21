@@ -1,3 +1,7 @@
+# *NatureSound 1.0.4*
+
+* Update requested by CRAN
+
 # *NatureSound 1.0.3*
 
 * Vignette typos fixed.

@@ -1,6 +1,7 @@
-pandoc: 1.19.2.1
-pkgdown: 1.4.1
+pandoc: 2.7.3
+pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   Acoustic_data_sets_in_NatureSounds: Acoustic_data_sets_in_NatureSounds.html
+last_built: 2021-04-21T03:14Z
 

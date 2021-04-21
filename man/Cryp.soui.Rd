@@ -4,11 +4,13 @@
 \name{Cryp.soui}
 \alias{Cryp.soui}
 \title{Acoustic recording of \emph{Crypturellus soui} (Little Tinamou).}
-\format{One .wav file: \describe{
+\format{
+One .wav file: \describe{
   
   \item{Cryp.soui}{\emph{Crypturellus soui} recording}
   
-  }}
+  }
+}
 \source{
 \url{http://www.xeno-canto.org/154190}
 }
