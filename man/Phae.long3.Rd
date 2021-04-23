@@ -12,7 +12,7 @@ One .wav file: \describe{
   }
 }
 \source{
-\url{http://www.xeno-canto.org/contributor/EMCWQLLKEW}
+\url{https://www.xeno-canto.org/contributor/EMCWQLLKEW}
 }
 \usage{
 data(Phae.long3)

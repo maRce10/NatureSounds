@@ -1,9 +1,9 @@
 # NatureSounds
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/NatureSounds)](https://cran.r-project.org/package=NatureSounds)
-[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/NatureSounds)](http://www.r-pkg.org/pkg/NatureSounds)
+[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/NatureSounds)](https://www.r-pkg.org:443/pkg/NatureSounds))
 [![Total downloads](https://cranlogs.r-pkg.org/badges/grand-total/NatureSounds?color=blue)](https://r-pkg.org/pkg/NatureSounds)
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 
 `NatureSounds` is a package containing a collection of example animal sounds for bioacoustic analysis. The main goal is to provide example recordings of animal sounds to faciliate the development of bioacoustic tools in the R environment. When possible, selection tables with the time/frequency coordinates of the sounds in the example recordings will also be included.
 
@@ -20,7 +20,7 @@ library(NatureSounds)
 
 ```
 
-To install the latest developmental version from [github](http://github.com/) you will need the R package [devtools](https://cran.r-project.org/package=devtools):
+To install the latest developmental version from [github](https://github.com/) you will need the R package [devtools](https://cran.r-project.org/package=devtools):
 
 ```r
 # From github

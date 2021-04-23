@@ -2,7 +2,7 @@
 title: <center><font size="7"><b>Acoustic data sets in <i>NatureSounds</i></b></font></center>
 pagetitle: Acoustic data sets in NatureSounds
 author: 
-- <center><a href="http://marceloarayasalas.weebly.com/">Marcelo Araya-Salas, PhD</a>
+- <center><a href="https://marceloarayasalas.weebly.com/">Marcelo Araya-Salas, PhD</a>
 date:  <center>"`r Sys.Date()`"</center>
 output:
   rmarkdown::html_document:

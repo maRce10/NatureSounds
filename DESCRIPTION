@@ -13,7 +13,7 @@ LazyData: TRUE
 URL: https://github.com/maRce10/NatureSounds 
 BugReports: https://github.com/maRce10/NatureSounds/issues
 NeedsCompilation: no
-Suggests: rmarkdown, knitr
+Suggests: rmarkdown
 VignetteBuilder: knitr
 RoxygenNote: 7.1.1
 Repository: CRAN
