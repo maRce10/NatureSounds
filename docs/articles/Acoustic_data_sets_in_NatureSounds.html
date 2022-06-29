@@ -41,7 +41,7 @@
       <ul class="nav navbar-nav">
 <li>
   <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -49,7 +49,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -69,7 +69,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="https://github.com/maRce10/NatureSounds/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -83,7 +83,7 @@
 
       
 
-      </header><script src="Acoustic_data_sets_in_NatureSounds_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+      </header><script src="Acoustic_data_sets_in_NatureSounds_files/header-attrs-2.13/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip><center>
@@ -94,7 +94,7 @@
 </center></h4>
             
             <h4 class="date"><center>
-“2021-04-22”
+“2022-06-29”
 </center></h4>
       
       <small class="dont-index">Source: <a href="https://github.com/maRce10/NatureSounds/blob/master/vignettes/Acoustic_data_sets_in_NatureSounds.Rmd"><code>vignettes/Acoustic_data_sets_in_NatureSounds.Rmd</code></a></small>
@@ -120,8 +120,8 @@
 <a href="#long-billed-hermit-songs" class="anchor"></a>Long billed hermit songs</h2>
 <p>The example data ‘lbh.est’ is an extended selection table containing long-billed hermit (<em>Phaethornis longirostris</em>) songs. The data contains the annotations and wave objects of 50 long-billed hermit songs from 10 different song types (5 per song type, ‘lek.song.type’ column) recorded at 8 leks (‘lek’ column) in the Caribbean slope of Costa Rica. This data set was used in <a href="#references-link">Araya-Salas et al 2019</a> to show lek (social group) level signatures in song structure. See <a href="https://marce10.github.io/2019/08/13/group_signature_xcorr.html">this blog post</a> for details on statistical analysis.</p>
 <p>The spectrograms of the song types can be displayed using the <code><a href="https://marce10.github.io/warbleR/reference/catalog.html">catalog()</a></code> function from <a href="https://cran.r-project.org/package=warbleR">warbleR</a>:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://marce10.github.io/warbleR/">warbleR</a></span><span class="op">)</span>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://marce10.github.io/warbleR/">warbleR</a></span><span class="op">)</span>
 
 <span class="co"># create a color palette</span>
 <span class="va">trc</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">n</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/grDevices/palettes.html">terrain.colors</a></span><span class="op">(</span>n <span class="op">=</span> <span class="va">n</span>, alpha <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span>
@@ -135,7 +135,7 @@
 
 <span class="co"># plot catalog</span>
 <span class="fu"><a href="https://marce10.github.io/warbleR/reference/catalog.html">catalog</a></span><span class="op">(</span>X <span class="op">=</span> <span class="va">lbh.est</span>, flim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1.5</span>, <span class="fl">10.5</span><span class="op">)</span>, nrow <span class="op">=</span> <span class="fl">10</span>, ncol <span class="op">=</span> <span class="fl">5</span>, group.tag <span class="op">=</span> <span class="st">"lek.song.type"</span>, height <span class="op">=</span> <span class="fl">25</span>, cex <span class="op">=</span> <span class="fl">2</span>,
-        title <span class="op">=</span> <span class="st">"Long billed hermits"</span>, img.prefix <span class="op">=</span> <span class="st">"lbh.est"</span>, wl <span class="op">=</span> <span class="fl">100</span><span class="op">)</span></pre></div>
+        title <span class="op">=</span> <span class="st">"Long billed hermits"</span>, img.prefix <span class="op">=</span> <span class="st">"lbh.est"</span>, wl <span class="op">=</span> <span class="fl">100</span><span class="op">)</span></code></pre></div>
 <p><img src="lbh.est-Catalog_p1.jpeg" alt="Long-billed hermits" width="900"></p>
 <p>Song types are labeled by color groups of consecutive spectrograms.</p>
 <p> </p>
@@ -144,13 +144,13 @@
 <h2 class="hasAnchor">
 <a href="#monk-parakeet-contact-calls" class="anchor"></a>Monk parakeet contact calls</h2>
 <p>‘monk.parakeet.est’ contains annotations and wave objects of 52 monk parakeet calls from four different social scales (individual, flock, pair, site; ‘scale’ column). The ‘ID’ column refers to selections belonging to the same individual when <code>scale == "Individual</code>. See <a href="#references-link">Smith-Vidaurre, Araya-Salas &amp; Wright (2019)</a> for more details.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="co"># load data</span>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># load data</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="st">"monk.parakeet.est"</span><span class="op">)</span>
 
 <span class="co"># monk parakeets</span>
 <span class="fu"><a href="https://marce10.github.io/warbleR/reference/catalog.html">catalog</a></span><span class="op">(</span>X <span class="op">=</span> <span class="va">monk.parakeet.est</span>, flim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">11</span><span class="op">)</span>, nrow <span class="op">=</span> <span class="fl">7</span>, ncol <span class="op">=</span> <span class="fl">8</span>,  group.tag <span class="op">=</span> <span class="st">"scale"</span>, 
-        title <span class="op">=</span> <span class="st">"Monk parakeets"</span>, img.prefix <span class="op">=</span> <span class="st">"monk.parakeet.est"</span>, wl <span class="op">=</span> <span class="fl">300</span><span class="op">)</span></pre></div>
+        title <span class="op">=</span> <span class="st">"Monk parakeets"</span>, img.prefix <span class="op">=</span> <span class="st">"monk.parakeet.est"</span>, wl <span class="op">=</span> <span class="fl">300</span><span class="op">)</span></code></pre></div>
 <p><img src="monk.parakeet.est-Catalog_p1.jpeg" alt="Monk parakeets" width="900"></p>
 <p>In this case color groups refer to the different social scales in the data.</p>
 <p> </p>
@@ -159,12 +159,12 @@
 <h2 class="hasAnchor">
 <a href="#spixs-disc-winged-bat-social-calls" class="anchor"></a>Spix’s disc-winged bat social calls</h2>
 <p>‘thyroptera.est’ is an extended selection table of Spix’s disc-winged bats (<em>Thyroptera tricolor</em>) social calls. The data contains the annotations and wave objects of social from 8 individual Spix’s disc-winged bats (‘id’ column) belonging to 4 social groups (‘group’ column). See <a href="#references-link">Araya-Salas et al (2020)</a> for more details. Can be used (among other things) to test for individual acoustic signatures.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="co"># load data</span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># load data</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="st">"thyroptera.est"</span><span class="op">)</span>
 
 <span class="co"># thyroptera</span>
-<span class="fu"><a href="https://marce10.github.io/warbleR/reference/catalog.html">catalog</a></span><span class="op">(</span>X <span class="op">=</span> <span class="va">thyroptera.est</span>, flim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">60</span><span class="op">)</span>, nrow <span class="op">=</span> <span class="fl">5</span>, ncol <span class="op">=</span> <span class="fl">8</span>, group.tag <span class="op">=</span> <span class="st">"group"</span>, title <span class="op">=</span> <span class="st">"Spix's disc-winged bats"</span>, img.prefix <span class="op">=</span> <span class="st">"thyroptera.est"</span>, wl <span class="op">=</span> <span class="fl">300</span><span class="op">)</span></pre></div>
+<span class="fu"><a href="https://marce10.github.io/warbleR/reference/catalog.html">catalog</a></span><span class="op">(</span>X <span class="op">=</span> <span class="va">thyroptera.est</span>, flim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">60</span><span class="op">)</span>, nrow <span class="op">=</span> <span class="fl">5</span>, ncol <span class="op">=</span> <span class="fl">8</span>, group.tag <span class="op">=</span> <span class="st">"group"</span>, title <span class="op">=</span> <span class="st">"Spix's disc-winged bats"</span>, img.prefix <span class="op">=</span> <span class="st">"thyroptera.est"</span>, wl <span class="op">=</span> <span class="fl">300</span><span class="op">)</span></code></pre></div>
 <p><img src="thyroptera.est-Catalog_p1.jpeg" alt="Thyroptera" width="900"></p>
 <p>Color groups refer to calls from individuals belonging to the same social group.</p>
 <p> </p>
@@ -176,32 +176,32 @@
 <div id="long-billed-hermit-wave-objects" class="section level3">
 <h3 class="hasAnchor">
 <a href="#long-billed-hermit-wave-objects" class="anchor"></a>Long billed hermit wave objects</h3>
-<div class="sourceCode" id="cb4"><pre class="downlit">
-<span class="co"># load data</span>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># load data</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="st">"Phae.long1"</span>, <span class="st">"Phae.long2"</span>, <span class="st">"Phae.long3"</span>, <span class="st">"Phae.long4"</span>, <span class="st">"Cryp.soui"</span><span class="op">)</span>
 
 <span class="co"># spectrogram</span>
-<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Phae.long1</span>, wl <span class="op">=</span> <span class="fl">100</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">50</span>, <span class="fl">0</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></pre></div>
+<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Phae.long1</span>, wl <span class="op">=</span> <span class="fl">100</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">50</span>, <span class="fl">0</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="Phae.long1.png" alt="Phae.long1" width="900"></p>
-<div class="sourceCode" id="cb5"><pre class="downlit">
-<span class="co"># spectrogram</span>
-<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Phae.long2</span>, wl <span class="op">=</span> <span class="fl">100</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">50</span>, <span class="fl">0</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># spectrogram</span>
+<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Phae.long2</span>, wl <span class="op">=</span> <span class="fl">100</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">50</span>, <span class="fl">0</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="Phae.long2.png" alt="Phae.long2" width="900"></p>
-<div class="sourceCode" id="cb6"><pre class="downlit">
-<span class="co"># spectrogram</span>
-<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Phae.long3</span>, wl <span class="op">=</span> <span class="fl">100</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">50</span>, <span class="fl">0</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># spectrogram</span>
+<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Phae.long3</span>, wl <span class="op">=</span> <span class="fl">100</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">50</span>, <span class="fl">0</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="Phae.long3.png" alt="Phae.long3" width="900"></p>
-<div class="sourceCode" id="cb7"><pre class="downlit">
-<span class="co"># spectrogram</span>
-<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Phae.long4</span>, wl <span class="op">=</span> <span class="fl">100</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">50</span>, <span class="fl">0</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># spectrogram</span>
+<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Phae.long4</span>, wl <span class="op">=</span> <span class="fl">100</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">50</span>, <span class="fl">0</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="Phae.long4.png" alt="Phae.long4" width="900"></p>
 </div>
 <div id="little-tinamou-wave-object" class="section level3">
 <h3 class="hasAnchor">
 <a href="#little-tinamou-wave-object" class="anchor"></a>Little tinamou wave object</h3>
-<div class="sourceCode" id="cb8"><pre class="downlit">
-<span class="co"># spectrogram</span>
-<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Cryp.soui</span>, wl <span class="op">=</span> <span class="fl">1200</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">35</span>, <span class="fl">0</span>, <span class="fl">2</span><span class="op">)</span>, flim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1.4</span>, <span class="fl">2.4</span><span class="op">)</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># spectrogram</span>
+<span class="fu">seewave</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/seewave/man/spectro.html">spectro</a></span><span class="op">(</span><span class="va">Cryp.soui</span>, wl <span class="op">=</span> <span class="fl">1200</span>, scale <span class="op">=</span> <span class="cn">FALSE</span>, ovlp <span class="op">=</span> <span class="fl">90</span>, grid <span class="op">=</span> <span class="cn">FALSE</span>, palette <span class="op">=</span> <span class="fu">seewave</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/seewave/man/seewave.internal.html">reverse.gray.colors.1</a></span>, collevels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">35</span>, <span class="fl">0</span>, <span class="fl">2</span><span class="op">)</span>, flim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1.4</span>, <span class="fl">2.4</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="Cryp.soui.png" alt="Cryp.soui" width="900"></p>
 <p> </p>
 </div>
@@ -218,18 +218,18 @@
 <p> </p>
 <hr>
 <p><font size="4">Session information</font></p>
-<pre><code>## R version 4.0.3 (2020-10-10)
+<pre><code>## R version 4.1.0 (2021-05-18)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 20.04.1 LTS
+## Running under: Ubuntu 20.04.2 LTS
 ## 
 ## Matrix products: default
-## BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
-## LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+## BLAS:   /usr/lib/x86_64-linux-gnu/atlas/libblas.so.3.10.3
+## LAPACK: /usr/lib/x86_64-linux-gnu/atlas/liblapack.so.3.10.3
 ## 
 ## locale:
-##  [1] LC_CTYPE=pt_PT.UTF-8       LC_NUMERIC=C              
-##  [3] LC_TIME=es_CR.UTF-8        LC_COLLATE=pt_PT.UTF-8    
-##  [5] LC_MONETARY=es_CR.UTF-8    LC_MESSAGES=pt_PT.UTF-8   
+##  [1] LC_CTYPE=pt_BR.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=es_CR.UTF-8        LC_COLLATE=pt_BR.UTF-8    
+##  [5] LC_MONETARY=es_CR.UTF-8    LC_MESSAGES=pt_BR.UTF-8   
 ##  [7] LC_PAPER=es_CR.UTF-8       LC_NAME=C                 
 ##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
 ## [11] LC_MEASUREMENT=es_CR.UTF-8 LC_IDENTIFICATION=C       
@@ -238,13 +238,14 @@
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] digest_0.6.27     crayon_1.4.1      rprojroot_1.3-2   assertthat_0.2.1 
-##  [5] R6_2.5.0          backports_1.1.10  magrittr_2.0.1    evaluate_0.14    
-##  [9] stringi_1.5.3     rlang_0.4.10      fs_1.5.0          ragg_0.4.0       
-## [13] rmarkdown_2.4     pkgdown_1.6.1     textshaping_0.1.2 desc_1.2.0       
-## [17] tools_4.0.3       stringr_1.4.0     yaml_2.2.1        xfun_0.22        
-## [21] compiler_4.0.3    systemfonts_0.3.2 memoise_1.1.0     htmltools_0.5.1.1
-## [25] knitr_1.31</code></pre>
+##  [1] rprojroot_2.0.2   crayon_1.5.1      digest_0.6.29     R6_2.5.1         
+##  [5] jsonlite_1.8.0    magrittr_2.0.3    evaluate_0.15     stringi_1.7.6    
+##  [9] rlang_1.0.2       cachem_1.0.5      cli_3.1.0         rstudioapi_0.13  
+## [13] fs_1.5.0          jquerylib_0.1.4   bslib_0.2.5.1     ragg_1.1.3       
+## [17] rmarkdown_2.13    pkgdown_1.6.1     textshaping_0.3.5 desc_1.3.0       
+## [21] tools_4.1.0       stringr_1.4.0     yaml_2.3.5        xfun_0.31        
+## [25] fastmap_1.1.0     compiler_4.1.0    systemfonts_1.0.2 memoise_2.0.0    
+## [29] htmltools_0.5.2   knitr_1.39        sass_0.4.0</code></pre>
 </div>
   </div>
 
