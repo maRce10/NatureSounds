@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>~/NatureSounds/404.html</loc>
+    <loc>/404.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/articles/Acoustic_data_sets_in_NatureSounds.html</loc>
+    <loc>/articles/Acoustic_data_sets_in_NatureSounds.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/articles/index.html</loc>
+    <loc>/articles/index.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/authors.html</loc>
+    <loc>/authors.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/index.html</loc>
+    <loc>/index.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/news/index.html</loc>
+    <loc>/news/index.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/Cryp.soui.html</loc>
+    <loc>/reference/Cryp.soui.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/NatureSounds.html</loc>
+    <loc>/reference/NatureSounds.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/Phae.long.est.html</loc>
+    <loc>/reference/Phae.long.est.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/Phae.long1.html</loc>
+    <loc>/reference/Phae.long1.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/Phae.long2.html</loc>
+    <loc>/reference/Phae.long2.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/Phae.long3.html</loc>
+    <loc>/reference/Phae.long3.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/Phae.long4.html</loc>
+    <loc>/reference/Phae.long4.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/index.html</loc>
+    <loc>/reference/index.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/lbh.est.html</loc>
+    <loc>/reference/lbh.est.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/monk.parakeet.est.html</loc>
+    <loc>/reference/monk.parakeet.est.html</loc>
   </url>
   <url>
-    <loc>~/NatureSounds/reference/thyroptera.est.html</loc>
+    <loc>/reference/thyroptera.est.html</loc>
   </url>
 </urlset>

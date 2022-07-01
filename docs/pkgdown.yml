@@ -3,8 +3,5 @@ pkgdown: 2.0.5
 pkgdown_sha: ~
 articles:
   Acoustic_data_sets_in_NatureSounds: Acoustic_data_sets_in_NatureSounds.html
-last_built: 2022-07-01T16:26Z
-urls:
-  reference: ~/NatureSounds/reference
-  article: ~/NatureSounds/articles
+last_built: 2022-07-01T16:34Z
 
