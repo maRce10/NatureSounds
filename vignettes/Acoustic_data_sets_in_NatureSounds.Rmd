@@ -32,6 +32,9 @@ editor_options:
 
 &nbsp; 
 
+<img src="NatureSounds_sticker.png" alt="NatureSounds logo" align="right" width = "25%" height="25%"/>
+
+
 [NatureSounds](https://cran.r-project.org/package=NatureSounds) contains a collection of animal sounds for bioacoustic analysis. The main goal is to provide example acoustic data to faciliate the development of bioacoustic tools in the R environment. At the same time, this data can be used as case studies for showing the functionality of tools already available in R. This tutorial offers a quick glance over the acoustic data sets included in the package.
 
 Most data sets are provided as extended selection tables. These are R objects that contains both the annotations (locations of signals in time and frequency) and the corresponding acoustic data as wave objects. Therefore, these are **self-contained objects** since the original sound files are no longer needed to perform acoustic analyses. These objects are created by the function `selection_table()` from [warbleR](https://cran.r-project.org/package=warbleR). Take a look at the [intro to warbleR vignette](https://cran.r-project.org/package=warbleR/vignettes/Intro_to_warbleR.html) for more details and check out the packages [warbleR](https://cran.r-project.org/package=warbleR),
